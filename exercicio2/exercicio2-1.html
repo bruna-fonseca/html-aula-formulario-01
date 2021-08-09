@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .right {
+      margin-left: 300px;
+    } 
+  </style>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <label for="nome">
+        Nome
+        <input type="text" name="nome" id="nome"/>
+        <br><br>
+      </label>
+      <label for="date">
+        Data de nascimento:
+        <input type="date" name="date" id="date">
+        <br><br>
+      </label>
+      <label for="estado">
+        Estado que você mora:
+        <br><br>
+        <select name="estado" id="estado">
+          <option value="">Selecie um estado</option>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+        </select>
+      </label>
+      <label style="margin-left: 200px;" for="genero">Gênero:</label>
+      <br>
+        <div class="right">
+          <input type="radio" name="genero" id="masculino">
+          <label for="masculino">Masculino</label>
+          <br>
+      </div>
+      <div class="right">
+          <input type="radio" name="genero" id="feminino">
+          <label for="feminino">Feminino</label>
+          <br>
+      </div>
+      <div class="right">
+        <input type="radio" name="genero" id="outro">
+        <label for="outro">Outro</label>
+        <br>
+      </div>
+      <br><br>
+      <label for="teste">
+        5 + 4 = ?
+        <input type="text" name="teste" id="teste" />
+      </label>
+      <br><br>
+      <button class="right" type="submit">Salvar</button>
+    </fieldset>
+  </form>
+</body>
+</html>
