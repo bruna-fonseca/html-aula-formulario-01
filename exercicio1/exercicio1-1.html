@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <legend>Informe seus dados pessoais</legend>
+    <br>
+    <label for="nome">
+      Nome Completo:
+      <input type="text" name="nome" id="nome">
+      <br>
+    </label>
+    <label for="idade">
+      Idade:
+      <input type="number" name="idade" id="idade">
+      <br>
+    </label>
+    <label for="nascimento">
+      Data de nascimento:
+      <input type="date" name="nascimento" id="nascimento">
+      <br>
+    </label>
+    <label for="telefone">
+      Número de telefone:
+      <input
+        type="tel"
+        name="telefone"
+        placeholder="(00) 0000-0000"
+        pattern="\(\d{2}\)\s\d{4,5}\-\d{4}"
+        id="telefone"
+        required
+        >
+        <br>
+    </label>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
